@@ -1,0 +1,33 @@
+/* src/components/CustomSelect.css */
+
+.custom-select-container {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.custom-select-label {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.custom-select {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.custom-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}

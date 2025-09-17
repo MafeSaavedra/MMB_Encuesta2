@@ -1,0 +1,76 @@
+.BloqueGeneral {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bienvenida-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cedula-input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 1.2rem;
+    width: 70%;
+    border: 0.2rem solid grey;
+    letter-spacing: 0.2rem;
+    transition: border-color 0.3s, color 0.3s;
+    outline: none;
+}
+
+.cedula-input:focus {
+    border-color: #689a40;
+    color: #464b48;
+}
+
+.bienvenida-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: grey;
+    margin: 0 auto;
+}
+
+.text-green {
+    color: #689a40;
+}
+
+.cedula-help {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #689a40;
+    font-weight: 600;
+    margin: 0.5rem auto;
+}
+
+.Imagen-gif {
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.gif {
+    position: relative;
+    bottom: -4vh;
+    right: -9vw;
+    width: 115%;
+    height: auto;
+}

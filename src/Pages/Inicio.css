@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.General {
+    display: grid;
+    grid-template-rows: auto 90vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "col1  col2";
+    width: 95%;
+    height: 95vh;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+
+.title {
+    display: block;
+    grid-area: title;
+    text-align: start;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+}
+
+.col1 {
+    display: flex;
+    align-self: end;
+    justify-self: start;
+    grid-area: col1;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.cohete-img {
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 80vh;
+
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: col2;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.Title-bienvenida {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.verde {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(75, 155, 71);
+    margin: 0;
+    padding: 0;
+}
+
+.verde-principal {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgb(75, 155, 71);
+    margin: 0;
+    padding: 0;
+
+}
+
+.parrafo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: grey;
+    margin: 0;
+    padding: 0;
+
+}
+
+.boton-encuesta {
+    margin: 1rem;
+    width: 40%;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    background: #689a40;
+    border: 2px solid beige;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton-encuesta:hover {
+    background: beige;
+    color: green;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}

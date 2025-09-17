@@ -1,0 +1,22 @@
+.custom-button {
+    align-self: auto;
+    margin-top: 1rem;
+    width: 40%;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    background: #689a40;
+    border: 2px solid beige;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+    background: beige;
+    color: green;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
