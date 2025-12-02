@@ -1,16 +1,28 @@
 .Contenedor-General {
     display: block;
-    width: 100%;
+    width: 80%;
     height: 90vh;
     margin: 0 auto;
     color: black;
     overflow: auto;
-    padding: 0 auto;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+
+}
+
+.TextoGenerico {
+    margin-top: 2px;
+    padding: 0;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .Problema {
+    margin: 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: rgb(75, 155, 71);
 
@@ -18,9 +30,9 @@
 
 .strong-1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: rgb(0, 0, 0);
-    font-weight: 500;
+    font-weight: 700;
     margin: 0 auto;
     padding: 0 auto;
 
@@ -29,7 +41,7 @@
 
 .Lista {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: rgb(0, 0, 0);
     list-style-type: disc;
@@ -37,5 +49,56 @@
     line-height: "1.8";
     margin: 0 auto;
 
+
+}
+
+.TituloGenerico {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+
+
+}
+
+.Recordatorio {
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: red;
+
+}
+
+.ComentarioBox {
+    width: 95%;
+    min-height: 100px;
+    max-height: 200px;
+    padding: 12px;
+    border: 1.1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    /* permite al usuario agrandar o achicar */
+    outline: none;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* efecto al enfocar */
+.ComentarioBox:focus {
+    border-color: #00ff08;
+    box-shadow: 0 0 5px rgba(0, 119, 255, 0.4);
+}
+
+.TextoGenericoimport,
+.NumeroCedula {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: rgb(219, 45, 45);
+    margin: 0;
 
 }

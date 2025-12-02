@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow: hidden;
 }
 
 .cedula-input {
@@ -41,6 +40,7 @@
     font-weight: 500;
     color: grey;
     margin: 0 auto;
+
 }
 
 .text-green {
@@ -73,4 +73,9 @@
     right: -9vw;
     width: 115%;
     height: auto;
+}
+
+/* Oculto en desktop por defecto */
+.btn-mobile-only {
+    display: none;
 }

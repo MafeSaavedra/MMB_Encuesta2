@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom"; // 👈 AHORA SÍ LOS DOS
 import "./Inicio.css";
-import cohete from "../Img/img-cohete.png";
+import cohete from "../Img/img-cohete.svg";
 
 export default function Inicio() {
     const location = useLocation();

@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: auto;
     margin: 0;
 }
 
@@ -13,12 +13,13 @@ body {
     grid-template-areas:
         "title title"
         "col1  col2";
-    width: 95%;
-    height: 95vh;
+    width: 90%;
+    height: auto;
     justify-content: center;
     margin: 0 auto;
     padding: 0 auto;
     text-align: center;
+    min-height: auto;
 }
 
 .title {
@@ -62,7 +63,7 @@ body {
     font-size: 3rem;
     font-weight: 500;
     color: grey;
-    margin: 0;
+    margin-top: 1rem;
     padding: 0;
 }
 
@@ -115,4 +116,184 @@ body {
     color: green;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== RESPONSIVIDAD ===== */
+
+/* Tablets (pantallas medianas, hasta 1024px) */
+@media (max-width: 1024px) {
+    .General {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        /* solo una columna */
+        grid-template-areas:
+            "title"
+            "col2"
+            "col1";
+        /* primero texto, luego cohete */
+        height: auto;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        grid-area: title;
+        text-align: start;
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .col1 {}
+
+    .col2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: col2;
+        margin: 0 auto;
+        padding: 0 auto;
+        height: auto;
+        width: 95%;
+
+    }
+
+    .Title-bienvenida {
+        font-size: 2.4rem;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    .parrafo {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+    }
+
+    .boton-encuesta {
+        width: 60%;
+        font-size: 1.2rem;
+    }
+
+    .cohete-img {
+        height: 60vh;
+        margin-top: 2rem;
+        margin-left: -15rem;
+    }
+
+    .verde {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .verde-principal {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: rgb(75, 155, 71);
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .boton-encuesta {
+        margin: 1rem;
+        width: 40%;
+        border-radius: 15px;
+        padding: 15px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: white;
+        background: #689a40;
+        border: 2px solid beige;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .boton-encuesta:hover {
+        background: beige;
+        color: green;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Móviles (pantallas pequeñas, hasta 768px) */
+@media (max-width: 768px) {
+    .General {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "title"
+            "col2"
+            "col1";
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    .col1 {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .Title-bienvenida {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        text-align: center;
+    }
+
+    .verde-principal {
+        font-size: 2rem;
+    }
+
+    .verde {
+        font-size: 1.1rem;
+    }
+
+    .parrafo {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+    }
+
+    .boton-encuesta {
+        width: auto;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .cohete-img {
+        max-height: 35vh;
+        margin-top: -0.5rem;
+
+    }
+
+    .boton-encuesta {
+        margin: 1rem;
+        width: auto;
+        border-radius: 15px;
+        padding: 15px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: white;
+        background: #689a40;
+        border: 2px solid beige;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .boton-encuesta:hover {
+        background: beige;
+        color: green;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
 }
